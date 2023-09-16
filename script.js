@@ -155,6 +155,15 @@ function initengahan(){
       vketik8=vketik81;aktipesan8();
     } else {
 	await swalst.fire({title: '' + kataditolak.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src,});
+      vketik8="";pertanyaanmeyakinkan();
+    }
+    }
+    async function pertanyaanmeyakinkan(){var { isConfirmed: prtanyayakin } = await swals.fire({title: nama + ' ' + tanyayakin, text: '' + opstanya, imageUrl: '' + fotostiker6.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif,});
+    if(prtanyayakin){
+  await swalst.fire({title: '' + katatambahan.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src,});
+      vketik8=vketik81;aktipesan8();
+    } else {
+	await swalst.fire({title: '' + kataditolak.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src,});
       vketik8="";aktipesan8();
     }
     }
