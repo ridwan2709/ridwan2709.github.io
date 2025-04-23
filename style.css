@@ -45,6 +45,7 @@ nav .logo,
 footer .logo{
     display: flex;
     align-items: center;
+
 }
 
 nav .logo a,
@@ -367,7 +368,7 @@ nav button#menuButton{
 }
 
 footer{
-    background-color: #deebee;
+    background-color: #fff;
     padding: 85px;
     display: flex;
     flex-direction: column;
@@ -612,12 +613,12 @@ footer .bottom .links a{
 
 }
 
-section {
+/* section {
     position: relative;
     width: 100%;
     height: 100vh;
     background: #0099ff;
-  }
+  } */
   .wave {
     position: absolute;
     bottom: 0;
@@ -689,3 +690,116 @@ section {
   .pagination-dot.active {
     background-color: #007bff; /* Warna titik aktif */
   }
+
+  /* Gaya untuk bagian kontak */
+#kontak {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #deebee; /* Warna latar belakang */
+}
+
+#kontak h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333; /* Warna judul */
+}
+
+.deskripsi-kontak {
+  color: #666; /* Warna deskripsi */
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.info-kontak {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .info-kontak {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.detail-kontak {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detail-kontak i {
+  font-size: 1.5em;
+  color: #007bff; /* Warna ikon */
+}
+
+.detail-kontak a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.detail-kontak a:hover {
+  color: #007bff; /* Warna tautan saat dihover */
+}
+
+#kontak h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Gaya untuk formulir kontak */
+#form-kontak {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.form-group textarea {
+  resize: vertical; /* Pengguna bisa mengubah tinggi textarea */
+}
+
+.tombol-kirim {
+  background-color: #007bff; /* Warna tombol */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.tombol-kirim:hover {
+  background-color: #0056b3; /* Warna tombol saat dihover */
+}

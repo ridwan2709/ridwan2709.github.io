@@ -22,7 +22,7 @@
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#feedback">Contact Person</a></li>
         </ul>
         <button>Contact Me</button>
         <button id="menuButton" onclick="openMenu()">
@@ -110,72 +110,48 @@
         </div>
     </div>
 
-    <!-- <div class="feedback" id="feedback">
-        <h5>Clients Reviews</h5>
-        <h3>Customers Feedback</h3>
-        <div class="customers">
-            <div class="item">
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                </div>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique. Duis cursus, mi quis viverra.
-                </p>
-                <div class="user">
-                    <img src="assets/us-1.jpg">
-                    <div class="info">
-                        <h5>Dianne Russell</h5>
-                        <p>Starbucks</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                </div>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique. Duis cursus, mi quis viverra.
-                </p>
-                <div class="user">
-                    <img src="assets/us-2.jpg">
-                    <div class="info">
-                        <h5>Kristian Watson</h5>
-                        <p>Louis Vuitton</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                </div>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique. Duis cursus, mi quis viverra.
-                </p>
-                <div class="user">
-                    <img src="assets/us-3.jpg">
-                    <div class="info">
-                        <h5>Kathryn Murphy</h5>
-                        <p>McDonald's</p>
-                    </div>
-                </div>
-            </div>
+    <section id="kontak">
+        <h2>Contact Person</h2>
+        <p class="deskripsi-kontak">Jangan ragu untuk menghubungi saya jika Anda memiliki pertanyaan, tawaran kolaborasi, atau sekadar ingin menyapa!</p>
+      
+        <div class="info-kontak">
+          <div class="detail-kontak">
+            <i class="bx bxl-gmail"></i>
+            <p><a href="mailto:alamatemailanda@example.com">ridwan@digitalkode.com</a></p>
+          </div>
+          <div class="detail-kontak">
+            <i class="bx bxl-whatsapp"></i>
+            <p><a href="https://api.whatsapp.com/send?phone=+6285864518811">+62 85864518811</a></p>
+          </div>
+          <div class="detail-kontak">
+            <i class="bx bxl-linkedin-square"></i>
+            <p><a href="https://www.linkedin.com/in/ridwan_27_" target="_blank" rel="noopener noreferrer">LinkedIn Saya</a></p>
+          </div>
+          <div class="detail-kontak">
+            <i class="bx bxl-github"></i>
+            <p><a href="https://github.com/ridwan2709" target="_blank" rel="noopener noreferrer">GitHub Saya</a> (jika ada)</p>
+          </div>
         </div>
-    </div> -->
+      
+        <h3>Or Send Message:</h3>
+        <form id="form-kontak" action="https://formspree.io/f/xvgaowzo" method="POST">
+            <input type="hidden" name="_next" value="/">
+            <input type="hidden" name="_subject" value="Pesan Baru dari Website Anda!">
+          <div class="form-group">
+            <label for="nama">name:</label>
+            <input type="text" id="nama" name="nama" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+          </div>
+          <div class="form-group">
+            <label for="pesan">Message:</label>
+            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="tombol-kirim">Kirim Pesan</button>
+        </form>
+      </section>
 
     <footer>
         <div class="top">
